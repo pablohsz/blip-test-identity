@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academy Agent</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        .main-container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+    </style>
+    <link rel="icon" type="image/x-icon" href="https://help.blip.ai/hc/theming_assets/01HZPM22JPHNV15ME4EQEYG7Z4">
+    <script src="https://unpkg.com/blip-chat-widget" type="text/javascript"></script>
+</head>
+<body id="body">
+    
+  
+        <script>
+            (function () {
+                window.onload = function () {
+                    new BlipChat()
+                        .withAppKey('ZmFxYWNhZGVteXY0OjAwOWFmMjdmLTM3MTMtNDNiNS1iNmZmLWQ0YzQ3N2MxYjcxMw==')
+                        .withButton({"color":"#0096fa","icon":""})
+                        .withCustomCommonUrl('https://protos-take-nick.chat.blip.ai/')
+                        .withTarget('body')
+                        .build();
+                }
+            })();
+        </script>
+   
+</body>
+</html>
